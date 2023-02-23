@@ -27,11 +27,6 @@ public class LoginController {
     UserService userService;
 
 
-    @RequestMapping("/to_login")
-    public String toLogin() {
-        return "login";
-    }
-
     @RequestMapping("/do_login")
     @ResponseBody
     public Result<String> doLogin(HttpServletResponse response, @Valid LoginVo loginVo) {

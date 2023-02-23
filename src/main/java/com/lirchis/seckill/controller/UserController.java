@@ -6,7 +6,6 @@ import com.lirchis.seckill.result.Result;
 import com.lirchis.seckill.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -25,7 +24,7 @@ public class UserController {
 
     @RequestMapping("/info")
     @ResponseBody
-    public Result<User> info(Model model, User user) {
+    public Result<User> info(User user) {
         return Result.success(user);
     }
 }

@@ -12,7 +12,6 @@ import com.lirchis.seckill.vo.GoodsVo;
 import com.lirchis.seckill.vo.OrderDetailVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -38,8 +37,7 @@ public class OrderController {
 
     @RequestMapping("/detail")
     @ResponseBody
-    public Result<OrderDetailVo> info(Model model, User user,
-                                      @RequestParam("orderId") long orderId) {
+    public Result<OrderDetailVo> info(User user, @RequestParam("orderId") long orderId) {
         if(user == null) {
             return Result.error(CodeMsg.SESSION_ERROR);
         }
