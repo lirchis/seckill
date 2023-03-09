@@ -54,8 +54,8 @@ CREATE TABLE `sk_goods_seckill` (
 -- ----------------------------
 -- Records of sk_goods_seckill
 -- ----------------------------
-INSERT INTO `sk_goods_seckill` VALUES ('1', '1', '0.01', '8', '2018-05-22 17:22:52', '2018-05-22 18:23:00', '0');
-INSERT INTO `sk_goods_seckill` VALUES ('2', '2', '0.01', '8', '2018-04-29 22:56:10', '2018-05-01 22:56:15', '0');
+INSERT INTO `sk_goods_seckill` VALUES ('1', '1', '0.01', '8', '2022-08-21 17:22:52', '2022-08-21 18:23:00', '0');
+INSERT INTO `sk_goods_seckill` VALUES ('2', '2', '0.01', '8', '2022-08-21 22:56:10', '2022-08-21 22:56:15', '0');
 
 
 -- ----------------------------
@@ -98,7 +98,7 @@ CREATE TABLE `sk_order_info` (
 -- ----------------------------
 -- Records of sk_order_info
 -- ----------------------------
-INSERT INTO `sk_order_info` VALUES ('10', '18718185897', '1', null, 'iphoneX', '1', '7788.00', '1', '0', '2018-05-29 17:02:00', null);
+INSERT INTO `sk_order_info` VALUES ('10', '18718185897', '1', null, 'iphoneX', '1', '7788.00', '1', '0', '2022-08-21 17:02:00', null);
 
 -- ----------------------------
 -- Table structure for sk_user
@@ -119,5 +119,5 @@ CREATE TABLE `sk_user` (
 -- ----------------------------
 -- Records of sk_user
 -- ----------------------------
-INSERT INTO `sk_user` VALUES ('18181818181', 'jesper', 'b7797cce01b4b131b433b6acf4add449', '1a2b3c4d', null, '2018-05-21 21:10:21', '2018-05-21 21:10:25', '1');
-INSERT INTO `sk_user` VALUES ('18217272828', 'jesper', 'b7797cce01b4b131b433b6acf4add449', '1a2b3c4d', null, '2018-05-21 21:10:21', '2018-05-21 21:10:25', '1');
+INSERT INTO `sk_user` VALUES ('18181818181', 'lirchis', 'b7797cce01b4b131b433b6acf4add449', '1a2b3c4d', null, '2022-08-21 21:10:21', '2022-08-21 21:10:25', '1');
+INSERT INTO `sk_user` VALUES ('18217272828', 'lirchis', 'b7797cce01b4b131b433b6acf4add449', '1a2b3c4d', null, '2022-08-21 21:10:21', '2022-08-21 21:10:25', '1');
