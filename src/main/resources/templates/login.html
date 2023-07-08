@@ -77,7 +77,7 @@
         var password = md5(str);
 
         $.ajax({
-            url: "/login/do_login",
+            url: "/doLogin",
             type: "POST",
             data: {
                 mobile: $("#mobile").val(),
@@ -85,9 +85,9 @@
             },
             success: function (data) {
                 layer.closeAll();
-                if (data.code === 0) {
+                if (data.msg === "success") {
                     layer.msg("成功");
-                    window.location.href = "/goods/to_list";
+                    window.location.href = "/index.htm";
                 } else {
                     layer.msg(data.msg);
                 }

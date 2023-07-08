@@ -18,6 +18,8 @@ public class UserDO extends BaseEntity {
 
     private String name;
 
+    private String mobile;
+
     private String password;
 
     private String salt;

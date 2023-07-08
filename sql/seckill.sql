@@ -67,10 +67,12 @@ CREATE TABLE `sk_user` (
   `modify_user` VARCHAR(200) NOT NULL COMMENT '修改者',
   `is_delete` char(1) NOT NULL COMMENT '是否删除',
   `name` varchar(255) NOT NULL COMMENT '昵称',
+  `mobile` varchar(32) NOT NULL COMMENT '电话号码',
   `password` varchar(32) DEFAULT NULL COMMENT 'MD5(MD5(pass明文+固定salt)+salt',
   `salt` varchar(10) DEFAULT NULL COMMENT '混淆盐',
   `avatar` varchar(128) DEFAULT NULL COMMENT '头像，云存储的ID',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_1` (`mobile`) GLOBAL
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
