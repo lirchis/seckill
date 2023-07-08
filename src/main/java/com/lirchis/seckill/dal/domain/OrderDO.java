@@ -7,20 +7,16 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.util.Date;
-
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @ToString(callSuper = true)
-@TableName(value = "sk_user", autoResultMap = true)
-public class UserDO extends BaseEntity {
+@TableName(value = "sk_order", autoResultMap = true)
+public class OrderDO extends BaseEntity {
+    private Long userId;
+    private Long goodsId;
+    private Integer goodsCount;
+    private Double goodsPrice;
+    private String status;
 
-    private String name;
-
-    private String password;
-
-    private String salt;
-
-    private String avatar;
 }

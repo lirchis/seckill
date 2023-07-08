@@ -8,19 +8,15 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import java.util.Date;
-
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @ToString(callSuper = true)
-@TableName(value = "sk_user", autoResultMap = true)
-public class UserDO extends BaseEntity {
-
-    private String name;
-
-    private String password;
-
-    private String salt;
-
-    private String avatar;
+@TableName(value = "sk_goods_seckill", autoResultMap = true)
+public class GoodsSeckillDO extends BaseEntity {
+    private Long goodsId;
+    private Double seckillPrice;
+    private Integer stock;
+    private Date startDate;
+    private Date endDate;
 }
